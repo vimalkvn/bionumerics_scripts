@@ -1,21 +1,4 @@
-'''General database functions
-
-Copyright (C) 2010  Vimalkumar Velayudhan <vimal@ucc.ie>
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>
-
-'''
+"""Common database functions"""
 
 import bns
 
@@ -45,10 +28,8 @@ def get_all_keys():
 	
 
 def get_characters(exper):
-	"""Returns list of characters in a character set 
-	experiment
+	"""Returns list of characters in a character set experiment"""	
 	
-	"""	
 	characters = []
 	exp_types = bns.Database.Db.ExperimentTypes	
 
@@ -60,3 +41,27 @@ def get_characters(exper):
 				characters.append(charset.GetChar(i))
 	
 	return characters
+
+def get_single_field(key, field):
+	"""Get the content of a single field"""
+	
+	fvalue = bns.Database.EntryField(key, field).Content
+	
+	return fvalue
+
+def get_selected():
+	"""Returns list of selected entries"""
+	
+	selected = list(bns.Database.Db.Selection)
+	
+	return selected
+	
+def get_field_names():
+	"""Returns the field names present in the database as a list"""
+	
+	fieldnames = []
+	dbfields = bns.Database.Db.Fields
+	for i in range(len(dbfields)):
+		fieldnames.append(dbfields[i].Name)
+	
+	return fieldnames
