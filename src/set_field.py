@@ -2,7 +2,6 @@
 Bionumerics 6
 
 """
-
 import sys
 import bns
 

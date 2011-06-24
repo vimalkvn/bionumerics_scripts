@@ -1,20 +1,5 @@
-'''Concatenate sequences in a character set experiment for 
+"""Concatenate sequences in a character set experiment for 
 a list of keys. 
-
-Copyright (C) 2010  Vimalkumar Velayudhan <vimal@ucc.ie>
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>
 
 Requires: experiment name
 Requires: dbf module
@@ -28,8 +13,7 @@ Characters(genes) are concatenated in alphabetical order.
 Output will be in the file exp_concat.txt in the 
 database path in FASTA format, where exp is the experiment name.
 
-'''
-
+"""
 import os
 import sys
 
@@ -50,7 +34,7 @@ if __name__ == "__main__":
 	
 	#list of excluded keys
 	EXCLUDE = ["S.typhi", "86155469690", "39518146360", "61197002200", "DBS100", 
-	"temp", "RefUserSeqTemporary"]	
+	"temp", "RefUserSeqTemporary"]
 	
 	for excl in EXCLUDE:
 		if excl in keys:

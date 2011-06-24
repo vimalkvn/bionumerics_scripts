@@ -2,7 +2,6 @@
 
 import bns
 
-
 def get_dbpath():
 	"""Returns database path"""
 	
@@ -10,7 +9,6 @@ def get_dbpath():
 	dbpath = db.Info.Path
 	
 	return dbpath
-
 
 def get_all_keys():
 	"""Returns a list of database entry keys"""
@@ -25,7 +23,6 @@ def get_all_keys():
 			keys.append(key)
 			
 	return keys
-	
 
 def get_characters(exper):
 	"""Returns list of characters in a character set experiment"""	
@@ -65,3 +62,4 @@ def get_field_names():
 		fieldnames.append(dbfields[i].Name)
 	
 	return fieldnames
+    
