@@ -24,7 +24,7 @@ gui
 
 utils
 .....
-* ``bn6-epydoc.py`` - Generate epydoc documentation of Bionumerics 6 
+* ``bn6_epydoc.py`` - Generate epydoc documentation of Bionumerics 6 
   Python modules.
 * ``concat_characters.py`` - Concatenate sequences in a character set 
   experiment for a list of keys.
