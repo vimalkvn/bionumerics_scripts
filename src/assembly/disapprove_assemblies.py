@@ -1,13 +1,11 @@
-"""Disapprove assemblies of all approveed sequence experiments 
-for selected entries
+"""Disapprove all assemblies for selected entries"""
 
-"""
 import bns
 
 def get_sequence_objectid(entry_key, entry_exper):
 	CDB = bns.ConnectedDb
-	ot = CDB.ObjectType("SEQUENCES")
-	seqflds = {"KEY": entry_key, "EXPERIMENT": entry_exper}
+	ot = CDB.ObjectType('SEQUENCES')
+	seqflds = {'KEY': entry_key, 'EXPERIMENT': entry_exper}
 	return CDB.ObjectID(ot, seqflds)
 	
 def update_contig_status(entry_key, entry_exper, status):
@@ -16,9 +14,9 @@ def update_contig_status(entry_key, entry_exper, status):
 	seqobject = get_sequence_objectid(entry_key, entry_exper)
 	ot = seqobject.GetType()
 	lx = seqobject.GetExpression()
-	action = CDB.ObjAction("Set contig status")
+	action = CDB.ObjAction('Set contig status')
 	objaction = CDB.ObjectSpecifAction(action, seqobject)
-	objaction.UpdateSingleField(ot, "CONTIGSTATUS", lx, status)
+	objaction.UpdateSingleField(ot, 'CONTIGSTATUS', lx, status)
 	objaction.Close()
 	action.Close()
 	return True
@@ -74,6 +72,7 @@ if __name__ == '__main__':
 		'Do you want to restart now?\n\nWARNING: this will close all '\
 		'opened windows without saving, with possible loss of data.', 
 		'question+yesno+defbutton2')
+		
 		if response == 1:
 			bns.Database.bnsIntern.db.Restart('')
 		
