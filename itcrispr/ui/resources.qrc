@@ -1,0 +1,13 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+<file alias="logo.png">logo.png</file>
+<file alias="edit-clear-list.png">edit-clear-list.png</file>
+<file alias="edit-select-all.png">edit-select-all.png</file>
+<file alias="application-exit.png">application-exit.png</file>
+<file alias="task-complete.png">task-complete.png</file>
+<file alias="task-ongoing.png">task-ongoing.png</file>
+<file alias="task-recurring.png">task-recurring.png</file>
+<file alias="arrow-right-double.png">arrow-right-double.png</file>
+<file alias="document-export-table.png">document-export-table.png</file>
+</qresource>
+</RCC>

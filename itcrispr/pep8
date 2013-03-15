@@ -1,0 +1,3 @@
+#ignore tabs and line-continuation errors
+[pep8]
+ignore=W191,E128

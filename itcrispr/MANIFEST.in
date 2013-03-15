@@ -1,0 +1,7 @@
+include README.rst README.pdf LICENSE.txt
+include itcrispr/itcrispr.cfg
+include itcrispr/itcrispr-menu.bns
+recursive-include itcrispr/tests/data *.cfg
+include itcrispr/tests/data/primer-newline.txt
+recursive-include itcrispr/tests/data/dups *.txt
+recursive-include itcrispr/tests/data/primers *.txt
