@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>itcrispr — An interface to assemble and track progress of CRISPR sequence experiments in BioNumerics &mdash; BioNumerics Scripts 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/solar.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="BioNumerics Scripts 1.0 documentation" href="index.html" />
+    <link rel="next" title="misc — Miscellaneous scripts" href="misc.html" />
+    <link rel="prev" title="itquery — An interface to query ItemTracker from BioNumerics" href="itquery.html" /><link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+<link href="_static/solarized-dark.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="misc.html" title="misc — Miscellaneous scripts"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="itquery.html" title="itquery — An interface to query ItemTracker from BioNumerics"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">BioNumerics Scripts 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">itcrispr &#8212; An interface to assemble and track progress of CRISPR sequence experiments in BioNumerics</a><ul>
+<li><a class="reference internal" href="#about">About</a></li>
+<li><a class="reference internal" href="#setup-and-configuration">Setup and configuration</a><ul>
+<li><a class="reference internal" href="#install-python-2-6">Install Python 2.6</a></li>
+<li><a class="reference internal" href="#install-pyqt">Install PyQt</a></li>
+<li><a class="reference internal" href="#install-itcrispr">Install itcrispr</a></li>
+<li><a class="reference internal" href="#configure-script">Configure script</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#notes">Notes</a><ul>
+<li><a class="reference internal" href="#add-a-button-to-the-toolbar">Add a button to the toolbar</a></li>
+<li><a class="reference internal" href="#add-or-remove-primer-sequences">Add or remove primer sequences</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="itquery.html"
+                        title="previous chapter">itquery &#8212; An interface to query ItemTracker from BioNumerics</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="misc.html"
+                        title="next chapter">misc &#8212; Miscellaneous scripts</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/itcrispr.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="itcrispr-an-interface-to-assemble-and-track-progress-of-crispr-sequence-experiments-in-bionumerics">
+<h1>itcrispr &#8212; An interface to assemble and track progress of CRISPR sequence experiments in BioNumerics<a class="headerlink" href="#itcrispr-an-interface-to-assemble-and-track-progress-of-crispr-sequence-experiments-in-bionumerics" title="Permalink to this headline">¶</a></h1>
+<p>Version: <tt class="docutils literal"><span class="pre">0.1.4</span></tt></p>
+<div class="section" id="about">
+<h2>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h2>
+<p>A program to assist in the analysis of CRISPR sequence experiments in BioNumerics. Assembly is done using predefined primers. The finished status of each primer
+is saved within the program.</p>
+</div>
+<div class="section" id="setup-and-configuration">
+<h2>Setup and configuration<a class="headerlink" href="#setup-and-configuration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="install-python-2-6">
+<h3>Install Python 2.6<a class="headerlink" href="#install-python-2-6" title="Permalink to this headline">¶</a></h3>
+<p>Download (x86 version): <a class="reference external" href="http://www.python.org/download/releases/2.6.6/">http://www.python.org/download/releases/2.6.6/</a></p>
+</div>
+<div class="section" id="install-pyqt">
+<h3>Install PyQt<a class="headerlink" href="#install-pyqt" title="Permalink to this headline">¶</a></h3>
+<p>Download (x86 version for Python 2.6): <a class="reference external" href="http://www.riverbankcomputing.co.uk/software/pyqt/download">http://www.riverbankcomputing.co.uk/software/pyqt/download</a></p>
+</div>
+<div class="section" id="install-itcrispr">
+<h3>Install itcrispr<a class="headerlink" href="#install-itcrispr" title="Permalink to this headline">¶</a></h3>
+<p>Clone repository</p>
+<div class="highlight-python"><pre>git clone git@github.com:vkvn/bionumerics_scripts.git</pre>
+</div>
+<p>Build and install</p>
+<div class="highlight-python"><pre>cd bionumerics_scripts/itcrispr
+python setup.py build
+python setup.py install</pre>
+</div>
+</div>
+<div class="section" id="configure-script">
+<h3>Configure script<a class="headerlink" href="#configure-script" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Change configuration in</p>
+<p><tt class="docutils literal"><span class="pre">C:\Python26\Lib\site-packages\itcrispr\itcrispr.cfg</span></tt></p>
+<p><tt class="docutils literal"><span class="pre">DATABASES</span></tt>, <tt class="docutils literal"><span class="pre">EXPERIMENTS</span></tt> and <tt class="docutils literal"><span class="pre">PRIMER_PATH</span></tt> are all <strong>required</strong> for
+the program to work.</p>
+<p><tt class="docutils literal"><span class="pre">DATABASES</span></tt></p>
+<blockquote>
+<div><p>The database name as in BioNumerics. Multiple databases can be specified
+as comma-separated values. This option is to prevent the script from being
+executed accidentally in other databases.</p>
+</div></blockquote>
+<p><tt class="docutils literal"><span class="pre">EXPERIMENTS</span></tt></p>
+<blockquote>
+<div><p>List of CRISPR sequence experiments - comma-separated.</p>
+</div></blockquote>
+<p><tt class="docutils literal"><span class="pre">PRIMER_PATH</span></tt></p>
+<blockquote>
+<div><p>PATH to the directory containing primer files in text format. File
+extension should be <tt class="docutils literal"><span class="pre">.txt</span></tt> and file should contain only the
+sequence (FASTA and other formats not supported).</p>
+</div></blockquote>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Select entries in BioNumerics. If no selection is made, program runs through
+all entries in the database.</p>
+</li>
+<li><p class="first">Run script using the <tt class="docutils literal"><span class="pre">Script</span> <span class="pre">--&gt;</span> <span class="pre">Run</span> <span class="pre">script</span> <span class="pre">from</span> <span class="pre">file</span></tt>
+option in BioNumerics. Navigate to the <tt class="docutils literal"><span class="pre">C:\Python26\Scripts</span></tt> folder and
+select <tt class="docutils literal"><span class="pre">run_itcrispr.py</span></tt></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">As easier method to run the script would be to add a button to the toolbar.
+Steps for doing this is described in <a class="reference internal" href="#add-a-button-to-the-toolbar">Add a button to the toolbar</a>.</p>
+</div>
+</li>
+<li><p class="first">An assembly will be done using the CRISPR sequences and primers. A dialog
+window will then be displayed with the list of primers that aligned with the
+sequences. Double-click on a primer to navigate to that region in the assembler.</p>
+<img alt="_images/itcrispr_mainwindow.jpg" src="_images/itcrispr_mainwindow.jpg" />
+</li>
+<li><p class="first">If you consider an experiment for an entry as finished, click the
+<strong>Save as Finished</strong> button. No primer should be checked. Use the
+<strong>Select None</strong> button to deselect all primers.</p>
+</li>
+<li><p class="first">To save an experiment as unfinished, check the primers for regions that
+need to be repeated and click the <strong>Save as Unfinished</strong> button.</p>
+</li>
+<li><p class="first">If you made some changes in the assembler window, use the <strong>Recalculate</strong>
+button to redo the assembly.</p>
+</li>
+<li><p class="first">Use the <strong>Skip</strong> button to redo this entry at a later time.</p>
+</li>
+<li><p class="first">Use the <strong>Export Database</strong> button to export the entire database to a <tt class="docutils literal"><span class="pre">CSV</span></tt>
+file.</p>
+</li>
+<li><p class="first"><strong>Stop</strong> button will terminate the program.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="notes">
+<h2>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>If the experiment for an entry is saved as finished, it will not be displayed
+in subsequent runs.</li>
+<li>Primer sequences are read, an assembly is done after changing the minimum
+score to the smallest length of primer.</li>
+<li>Primers selected previously appear checked when the window is shown.</li>
+<li>Closing the window skips to the next experiment. Use the <strong>Stop</strong> button to
+exit the program.</li>
+<li>Sequence approval status in BioNumerics is not taken into consideration for
+deciding which entries to check. Sequences are made approved if they are
+saved as finished using the program.</li>
+</ul>
+<div class="section" id="add-a-button-to-the-toolbar">
+<span id="add-button"></span><h3>Add a button to the toolbar<a class="headerlink" href="#add-a-button-to-the-toolbar" title="Permalink to this headline">¶</a></h3>
+<p><strong>This needs to be done whenever the program is updated!</strong></p>
+<ol class="arabic">
+<li><p class="first">Copy</p>
+<p><tt class="docutils literal"><span class="pre">C:\Python26\Lib\site-packages\itcrispr\itcrispr-menu.bns</span></tt> to</p>
+<p>the <cite>scripts home</cite> directory under your BioNumerics Home directory. For example,</p>
+<p><tt class="docutils literal"><span class="pre">C:\Users\vimal\BioNumerics\Data\Scripts</span> <span class="pre">Home\</span></tt></p>
+</li>
+<li><p class="first">Load this file in the <strong>BNS</strong> Script editor</p>
+<p><tt class="docutils literal"><span class="pre">Script</span> <span class="pre">--&gt;</span> <span class="pre">BNS</span> <span class="pre">Script</span> <span class="pre">editor</span></tt></p>
+<p>followed by</p>
+<p><tt class="docutils literal"><span class="pre">File</span> <span class="pre">--&gt;</span> <span class="pre">Load</span> <span class="pre">Script</span></tt></p>
+</li>
+<li><p class="first">Open <tt class="docutils literal"><span class="pre">File</span> <span class="pre">--&gt;</span> <span class="pre">Attachments</span></tt> and click <strong>Add new</strong></p>
+</li>
+<li><p class="first">Select <tt class="docutils literal"><span class="pre">C:\Python26\Scripts\run_itcrispr.py</span></tt> and click <strong>Open</strong>.
+Enter <tt class="docutils literal"><span class="pre">run_itcrispr</span></tt> in the dialog that appears and click <strong>OK</strong>.</p>
+</li>
+<li><p class="first">Save the script.</p>
+</li>
+<li><p class="first">Restart BioNumerics. An icon <img alt="icon" src="_images/itcrispr_logo.png" />  should now be available in the toolbar. Click
+this icon to launch the program.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="add-or-remove-primer-sequences">
+<h3>Add or remove primer sequences<a class="headerlink" href="#add-or-remove-primer-sequences" title="Permalink to this headline">¶</a></h3>
+<p>Primer files are plain text files with just the sequence of the primer.</p>
+<p>Add or remove primers to/from the location specified in the configuration
+file - the <tt class="docutils literal"><span class="pre">PRIMER_PATH</span></tt> variable.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="misc.html" title="misc — Miscellaneous scripts"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="itquery.html" title="itquery — An interface to query ItemTracker from BioNumerics"
+             >previous</a> |</li>
+        <li><a href="index.html">BioNumerics Scripts 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Vimalkumar Velayudhan.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.Theme by <a href="http://github.com/vkvn">vkvn</a>
+    </div>
+  </body>
+</html>
