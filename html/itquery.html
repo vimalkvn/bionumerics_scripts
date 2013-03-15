@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>itquery — An interface to query ItemTracker from BioNumerics &mdash; BioNumerics Scripts 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/solar.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="BioNumerics Scripts 1.0 documentation" href="index.html" />
+    <link rel="next" title="misc — Miscellaneous scripts" href="misc.html" />
+    <link rel="prev" title="Documentation for vkvn/bionumerics_scripts" href="index.html" /><link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+<link href="_static/solarized-dark.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="misc.html" title="misc — Miscellaneous scripts"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Documentation for vkvn/bionumerics_scripts"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">BioNumerics Scripts 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">itquery &#8212; An interface to query ItemTracker from BioNumerics</a><ul>
+<li><a class="reference internal" href="#about">About</a></li>
+<li><a class="reference internal" href="#features">Features</a></li>
+<li><a class="reference internal" href="#citation">Citation</a></li>
+<li><a class="reference internal" href="#requirements">Requirements</a></li>
+<li><a class="reference internal" href="#demo">Demo</a></li>
+<li><a class="reference internal" href="#screenshots">Screenshots</a><ul>
+<li><a class="reference internal" href="#main-window">Main Window</a></li>
+<li><a class="reference internal" href="#get-all-selected-view">Get all selected view</a></li>
+<li><a class="reference internal" href="#cherry-picking-view">Cherry picking view</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Documentation for vkvn/bionumerics_scripts</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="misc.html"
+                        title="next chapter">misc &#8212; Miscellaneous scripts</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/itquery.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="itquery-an-interface-to-query-itemtracker-from-bionumerics">
+<h1>itquery &#8212; An interface to query ItemTracker from BioNumerics<a class="headerlink" href="#itquery-an-interface-to-query-itemtracker-from-bionumerics" title="Permalink to this headline">¶</a></h1>
+<p>Version: <tt class="docutils literal"><span class="pre">2.0.8</span></tt></p>
+<div class="section" id="about">
+<h2>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h2>
+<p>itquery is a graphical interface to display location information of strains,
+frozen stock&#8217;s and DNA&#8217;s stored in a LIMS system (ItemTracker) within a strain
+database maintained in BioNumerics. An &#8220;ItemTracker ID&#8221; links data related to a
+strain in both databases.</p>
+</div>
+<div class="section" id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Display location information of Strains, Frozen stock&#8217;s or DNA&#8217;s in the freezer.</li>
+<li>Display and set/unset the selection status of Strains, Frozen stock&#8217;s or DNA&#8217;s in the LIMS database.</li>
+<li>Display additional information related to an item in both databases (Saved
+between sessions).</li>
+<li>Get all items marked as selected in the LIMS database.</li>
+<li>Cherry picking view displays status of sequencing (Finished, Repeat, Picked).
+Filter by user or sequencing status.</li>
+<li>Export sequence trace information or DNA information related to a strain as
+a CSV file.</li>
+</ul>
+</div>
+<div class="section" id="citation">
+<h2>Citation<a class="headerlink" href="#citation" title="Permalink to this headline">¶</a></h2>
+<p>itquery is discussed in</p>
+<p><a class="reference external" href="http://www.plosone.org/article/info:doi/10.1371/journal.pone.0048022">Transforming Microbial Genotyping: A Robotic Pipeline for Genotyping Bacterial Strains</a></p>
+<p>O’Farrell B, Haase JK, Velayudhan V, Murphy RA, Achtman M (2012).
+PLoS ONE 7(10): e48022. doi:10.1371/journal.pone.0048022</p>
+</div>
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first"><a class="reference external" href="http://applied-maths.com">BioNumerics</a></p>
+</li>
+<li><p class="first"><a class="reference external" href="http://www.itemtracker.com">ItemTracker</a></p>
+</li>
+<li><p class="first">Python 2.6 (tested with 2.6.6)</p>
+<p>Download - <a class="reference external" href="http://python.org/">http://python.org/</a></p>
+</li>
+<li><p class="first">PyQt4 32-bit for Python 2.6 (tested with 4.9.1)</p>
+<p>Download - <a class="reference external" href="http://www.riverbankcomputing.co.uk/software/pyqt/download">http://www.riverbankcomputing.co.uk/software/pyqt/download</a></p>
+</li>
+<li><p class="first">Database connectivity requires the pyodbc module (not required for demo)</p>
+<p>Download - <a class="reference external" href="http://code.google.com/p/pyodbc/">http://code.google.com/p/pyodbc/</a></p>
+</li>
+</ul>
+</div>
+<div class="section" id="demo">
+<h2>Demo<a class="headerlink" href="#demo" title="Permalink to this headline">¶</a></h2>
+<p>Run file <tt class="file docutils literal"><span class="pre">itquery_demo.py</span></tt></p>
+<p>The main program is <tt class="docutils literal"><span class="pre">itquery.py</span></tt> would require modification to handle a
+specific data structure. A sample of all data structures used for the demo is
+contained in <tt class="file docutils literal"><span class="pre">data.json</span></tt>.</p>
+</div>
+<div class="section" id="screenshots">
+<h2>Screenshots<a class="headerlink" href="#screenshots" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="main-window">
+<h3>Main Window<a class="headerlink" href="#main-window" title="Permalink to this headline">¶</a></h3>
+<img alt="_images/itquery_mainwindow.png" src="_images/itquery_mainwindow.png" style="width: 90%;" />
+</div>
+<div class="section" id="get-all-selected-view">
+<h3>Get all selected view<a class="headerlink" href="#get-all-selected-view" title="Permalink to this headline">¶</a></h3>
+<img alt="_images/itquery_getallselected.png" src="_images/itquery_getallselected.png" style="width: 90%;" />
+</div>
+<div class="section" id="cherry-picking-view">
+<h3>Cherry picking view<a class="headerlink" href="#cherry-picking-view" title="Permalink to this headline">¶</a></h3>
+<img alt="_images/itquery_cherrypicking.png" src="_images/itquery_cherrypicking.png" style="width: 90%;" />
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="misc.html" title="misc — Miscellaneous scripts"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Documentation for vkvn/bionumerics_scripts"
+             >previous</a> |</li>
+        <li><a href="index.html">BioNumerics Scripts 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Vimalkumar Velayudhan.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.Theme by <a href="http://github.com/vkvn">vkvn</a>
+    </div>
+  </body>
+</html>
