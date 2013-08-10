@@ -5,5 +5,5 @@ BioNumerics (6.5 - 6.6).
 
 Documentation
 -------------
-http://vimalkumar.in/bionumerics_scripts/html/itcrispr.html
+http://vkvn.github.io/bionumerics_scripts/html/itcrispr.html
 
