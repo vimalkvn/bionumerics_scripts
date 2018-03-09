@@ -1,0 +1,11 @@
+{% extends "!layout.html" %}
+
+{% block extrahead %}
+{{ super() }}
+<link href="{{ pathto('_static/buttons-min.css', 1) }}" rel="stylesheet" type="text/css">
+<link href="{{ pathto('_static/custom.css', 1) }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block content %}
+{{ super() }}
+{% endblock %}

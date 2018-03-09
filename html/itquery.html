@@ -1,116 +1,56 @@
 
-<!DOCTYPE html>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>itquery — An interface to query ItemTracker from BioNumerics &mdash; BioNumerics Scripts 1.0 documentation</title>
-    
-    <link rel="stylesheet" href="_static/solar.css" type="text/css" />
+    <title>itquery — An interface to query ItemTracker from BioNumerics &#8212; BioNumerics Scripts 1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
-        VERSION:     '1.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="BioNumerics Scripts 1.0 documentation" href="index.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="itcrispr — An interface to assemble and track progress of CRISPR sequence experiments in BioNumerics" href="itcrispr.html" />
-    <link rel="prev" title="Documentation for vkvn/bionumerics_scripts" href="index.html" /><link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
-<link href="_static/solarized-dark.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="related">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="itcrispr.html" title="itcrispr — An interface to assemble and track progress of CRISPR sequence experiments in BioNumerics"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="index.html" title="Documentation for vkvn/bionumerics_scripts"
-             accesskey="P">previous</a> |</li>
-        <li><a href="index.html">BioNumerics Scripts 1.0 documentation</a> &raquo;</li> 
-      </ul>
-    </div>
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">itquery &#8212; An interface to query ItemTracker from BioNumerics</a><ul>
-<li><a class="reference internal" href="#about">About</a></li>
-<li><a class="reference internal" href="#features">Features</a></li>
-<li><a class="reference internal" href="#citation">Citation</a></li>
-<li><a class="reference internal" href="#requirements">Requirements</a></li>
-<li><a class="reference internal" href="#demo">Demo</a></li>
-<li><a class="reference internal" href="#screenshots">Screenshots</a><ul>
-<li><a class="reference internal" href="#main-window">Main Window</a></li>
-<li><a class="reference internal" href="#get-all-selected-view">Get all selected view</a></li>
-<li><a class="reference internal" href="#cherry-picking-view">Cherry picking view</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+    <link rel="prev" title="Python scripts for working with BioNumerics 6 databases" href="index.html" />
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="index.html"
-                        title="previous chapter">Documentation for vkvn/bionumerics_scripts</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="itcrispr.html"
-                        title="next chapter">itcrispr &#8212; An interface to assemble and track progress of CRISPR sequence experiments in BioNumerics</a></p>
-  <h3>This Page</h3>
-  <ul class="this-page-menu">
-    <li><a href="_sources/itquery.txt"
-           rel="nofollow">Show Source</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
-  <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+<link href="_static/buttons-min.css" rel="stylesheet" type="text/css">
+<link href="_static/custom.css" rel="stylesheet" type="text/css">
+
+  </head><body>
+
+  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="itquery-an-interface-to-query-itemtracker-from-bionumerics">
-<h1>itquery &#8212; An interface to query ItemTracker from BioNumerics<a class="headerlink" href="#itquery-an-interface-to-query-itemtracker-from-bionumerics" title="Permalink to this headline">¶</a></h1>
-<p>Version: <tt class="docutils literal"><span class="pre">2.0.8</span></tt></p>
+<h1>itquery — An interface to query ItemTracker from BioNumerics<a class="headerlink" href="#itquery-an-interface-to-query-itemtracker-from-bionumerics" title="Permalink to this headline">¶</a></h1>
+<p>Version: <code class="docutils literal notranslate"><span class="pre">2.0.8</span></code></p>
 <div class="section" id="about">
 <h2>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h2>
 <p>itquery is a graphical interface to display location information of strains,
-frozen stock&#8217;s and DNA&#8217;s stored in a LIMS system (ItemTracker) within a strain
-database maintained in BioNumerics. An &#8220;ItemTracker ID&#8221; links data related to a
+frozen stock’s and DNA’s stored in a LIMS system (ItemTracker) within a strain
+database maintained in BioNumerics. An “ItemTracker ID” links data related to a
 strain in both databases.</p>
 </div>
 <div class="section" id="features">
 <h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Display location information of Strains, Frozen stock&#8217;s or DNA&#8217;s in the freezer.</li>
-<li>Display and set/unset the selection status of Strains, Frozen stock&#8217;s or DNA&#8217;s in the LIMS database.</li>
+<li>Display location information of Strains, Frozen stock’s or DNA’s in the freezer.</li>
+<li>Display and set/unset the selection status of Strains, Frozen stock’s or DNA’s in the LIMS database.</li>
 <li>Display additional information related to an item in both databases (Saved
 between sessions).</li>
 <li>Get all items marked as selected in the LIMS database.</li>
@@ -147,24 +87,24 @@ PLoS ONE 7(10): e48022. doi:10.1371/journal.pone.0048022</p>
 </div>
 <div class="section" id="demo">
 <h2>Demo<a class="headerlink" href="#demo" title="Permalink to this headline">¶</a></h2>
-<p>Run file <tt class="file docutils literal"><span class="pre">itquery_demo.py</span></tt></p>
-<p>The main program is <tt class="docutils literal"><span class="pre">itquery.py</span></tt> would require modification to handle a
+<p>Run file <code class="file docutils literal notranslate"><span class="pre">itquery_demo.py</span></code></p>
+<p>The main program is <code class="docutils literal notranslate"><span class="pre">itquery.py</span></code> would require modification to handle a
 specific data structure. A sample of all data structures used for the demo is
-contained in <tt class="file docutils literal"><span class="pre">data.json</span></tt>.</p>
+contained in <code class="file docutils literal notranslate"><span class="pre">data.json</span></code>.</p>
 </div>
 <div class="section" id="screenshots">
 <h2>Screenshots<a class="headerlink" href="#screenshots" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="main-window">
 <h3>Main Window<a class="headerlink" href="#main-window" title="Permalink to this headline">¶</a></h3>
-<img alt="_images/itquery_mainwindow.png" src="_images/itquery_mainwindow.png" style="width: 90%;" />
+<a class="reference internal image-reference" href="_images/itquery_mainwindow.png"><img alt="_images/itquery_mainwindow.png" src="_images/itquery_mainwindow.png" style="width: 90%;" /></a>
 </div>
 <div class="section" id="get-all-selected-view">
 <h3>Get all selected view<a class="headerlink" href="#get-all-selected-view" title="Permalink to this headline">¶</a></h3>
-<img alt="_images/itquery_getallselected.png" src="_images/itquery_getallselected.png" style="width: 90%;" />
+<a class="reference internal image-reference" href="_images/itquery_getallselected.png"><img alt="_images/itquery_getallselected.png" src="_images/itquery_getallselected.png" style="width: 90%;" /></a>
 </div>
 <div class="section" id="cherry-picking-view">
 <h3>Cherry picking view<a class="headerlink" href="#cherry-picking-view" title="Permalink to this headline">¶</a></h3>
-<img alt="_images/itquery_cherrypicking.png" src="_images/itquery_cherrypicking.png" style="width: 90%;" />
+<a class="reference internal image-reference" href="_images/itquery_cherrypicking.png"><img alt="_images/itquery_cherrypicking.png" src="_images/itquery_cherrypicking.png" style="width: 90%;" /></a>
 </div>
 </div>
 </div>
@@ -173,26 +113,65 @@ contained in <tt class="file docutils literal"><span class="pre">data.json</span
           </div>
         </div>
       </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">BioNumerics Scripts</a></h1>
+
+
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=vimalkvn&repo=bionumerics_scripts&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+<h3>Navigation</h3>
+
+
+<ul>
+<li><a class="reference internal" href="#">itquery — An interface to query ItemTracker from BioNumerics</a><ul>
+<li><a class="reference internal" href="#about">About</a></li>
+<li><a class="reference internal" href="#features">Features</a></li>
+<li><a class="reference internal" href="#citation">Citation</a></li>
+<li><a class="reference internal" href="#requirements">Requirements</a></li>
+<li><a class="reference internal" href="#demo">Demo</a></li>
+<li><a class="reference internal" href="#screenshots">Screenshots</a><ul>
+<li><a class="reference internal" href="#main-window">Main Window</a></li>
+<li><a class="reference internal" href="#get-all-selected-view">Get all selected view</a></li>
+<li><a class="reference internal" href="#cherry-picking-view">Cherry picking view</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+
+        </div>
+      </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="itcrispr.html" title="itcrispr — An interface to assemble and track progress of CRISPR sequence experiments in BioNumerics"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="index.html" title="Documentation for vkvn/bionumerics_scripts"
-             >previous</a> |</li>
-        <li><a href="index.html">BioNumerics Scripts 1.0 documentation</a> &raquo;</li> 
-      </ul>
-    </div>
+
     <div class="footer">
-        &copy; Copyright 2013, Vimalkumar Velayudhan.
-    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.Theme by <a href="http://github.com/vkvn">vkvn</a>
+      &copy;2013, Vimalkumar Velayudhan.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/itquery.rst.txt"
+          rel="nofollow">Page source</a>
     </div>
+
+    
+
+    
   </body>
 </html>

@@ -1,0 +1,117 @@
+body {
+    font-family: "Inter UI", sans-serif;
+}
+
+div.document {
+    margin: 0 auto;
+}
+
+div.body {
+    padding: 30px;
+}
+
+div.body h1, div.body h2, div.body h3, div.body h4,
+div.body h5, div.body h6, div.admonition p.admonition-title {
+    font-family: "Inter UI", sans-serif;
+    color: #212121;
+}
+
+div.sphinxsidebarwrapper {
+    padding: 20px;
+}
+
+div.sphinxsidebar {
+    background-color: #F1E8F0;
+    color: #333;
+    padding: 6px;
+}
+
+.button-group {
+    width: 100%;
+}
+ 
+.button-col {
+    display: inline-block;
+    margin: 0.3em;
+}
+
+div.sphinxsidebar a.pure-button-primary, a.pure-button-primary {
+    background-color: #77216f;
+    color: white;
+    text-decoration: none;
+}
+
+div.sphinxsidebar a.pure-button-primary:hover,
+div.sphinxsidebar a.pure-button-primary:focus,
+a.pure-button-primary:hover,
+a.pure-button-primary:focus {
+    background-color: #212121;
+    color: white;
+    text-decoration: none;
+}
+
+div.note {
+    background-color: #F1E8F0;
+    border: 1px solid #D6BCD3;
+}
+
+div.sphinxsidebar ul, div.sphinxsidebar a {
+    color: #333;
+}
+
+div.sphinxsidebar a {
+    border-bottom: none;
+}
+
+div.sphinxsidebar a:hover, div.sphinxsidebar a:focus {
+    color: #77216f;
+    border-bottom: 1px solid #77216f;
+}
+
+div.sphinxsidebar h3, div.sphinxsidebar h4 {
+    font-family: inherit;
+    color: #333;
+}
+
+.text-logo {
+    background-color: #77216f;
+}
+
+a, a.reference {
+    color: #77216f;
+}
+
+a.reference {
+    border-bottom: 1px dotted #77216f;
+}
+
+a:hover, a:focus {
+    color: #2C001E;
+}
+
+a.button, a.button:hover, a.button:focus {
+    text-decoration: none;
+}
+
+p.lead {
+    font-size: 1.3em;
+    padding: 1.5em;
+    border-bottom: 1px dotted #F1E8F0;
+    border-top: 1px dotted #F1E8F0;
+}    
+
+pre, code, kbd, tt {
+    font-family: Inconsolata, monospace;
+    background-color: #F1E8F0;
+    font-size: 1em;
+}
+
+div.footer {
+    text-align: center;
+}
+
+table.docutils caption {
+    margin: 1em 0;
+    text-align: left;
+    font-size: 1.2em;
+}

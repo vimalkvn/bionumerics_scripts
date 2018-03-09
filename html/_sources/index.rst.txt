@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Documentation for vkvn/bionumerics_scripts
-==========================================
+Python scripts for working with BioNumerics 6 databases
+=======================================================
 
 Contents:
 

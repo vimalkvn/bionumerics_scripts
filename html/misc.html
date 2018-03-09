@@ -1,121 +1,75 @@
 
-<!DOCTYPE html>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>misc — Miscellaneous scripts &mdash; BioNumerics Scripts 1.0 documentation</title>
-    
-    <link rel="stylesheet" href="_static/solar.css" type="text/css" />
+    <title>misc — Miscellaneous scripts &#8212; BioNumerics Scripts 1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
-        VERSION:     '1.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="BioNumerics Scripts 1.0 documentation" href="index.html" />
-    <link rel="prev" title="itcrispr — An interface to assemble and track progress of CRISPR sequence experiments in BioNumerics" href="itcrispr.html" /><link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
-<link href="_static/solarized-dark.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="related">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="itcrispr.html" title="itcrispr — An interface to assemble and track progress of CRISPR sequence experiments in BioNumerics"
-             accesskey="P">previous</a> |</li>
-        <li><a href="index.html">BioNumerics Scripts 1.0 documentation</a> &raquo;</li> 
-      </ul>
-    </div>
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">misc &#8212; Miscellaneous scripts</a><ul>
-<li><a class="reference internal" href="#assembly">assembly</a></li>
-<li><a class="reference internal" href="#gui">gui</a></li>
-<li><a class="reference internal" href="#utils">utils</a></li>
-</ul>
-</li>
-</ul>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="itcrispr — An interface to assemble and track progress of CRISPR sequence experiments in BioNumerics" href="itcrispr.html" />
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="itcrispr.html"
-                        title="previous chapter">itcrispr &#8212; An interface to assemble and track progress of CRISPR sequence experiments in BioNumerics</a></p>
-  <h3>This Page</h3>
-  <ul class="this-page-menu">
-    <li><a href="_sources/misc.txt"
-           rel="nofollow">Show Source</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
-  <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+<link href="_static/buttons-min.css" rel="stylesheet" type="text/css">
+<link href="_static/custom.css" rel="stylesheet" type="text/css">
+
+  </head><body>
+
+  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="misc-miscellaneous-scripts">
-<h1>misc &#8212; Miscellaneous scripts<a class="headerlink" href="#misc-miscellaneous-scripts" title="Permalink to this headline">¶</a></h1>
+<h1>misc — Miscellaneous scripts<a class="headerlink" href="#misc-miscellaneous-scripts" title="Permalink to this headline">¶</a></h1>
 <p>This directory is organized into the following sub-directories.</p>
 <div class="section" id="assembly">
 <h2>assembly<a class="headerlink" href="#assembly" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><tt class="docutils literal"><span class="pre">approve_assemblies.py</span></tt> - Approve all assemblies for selected entries.</li>
-<li><tt class="docutils literal"><span class="pre">delete_contigs.py</span></tt> - Delete contigs(if present) from sequence experiments
+<li><code class="docutils literal notranslate"><span class="pre">approve_assemblies.py</span></code> - Approve all assemblies for selected entries.</li>
+<li><code class="docutils literal notranslate"><span class="pre">delete_contigs.py</span></code> - Delete contigs(if present) from sequence experiments
 of selected entries.</li>
-<li><tt class="docutils literal"><span class="pre">disapprove_assemblies.py</span></tt> - Disapprove all assemblies for selected entries.</li>
-<li><tt class="docutils literal"><span class="pre">import_traces.py</span></tt> - Import ABI sequence trace files into a connected
+<li><code class="docutils literal notranslate"><span class="pre">disapprove_assemblies.py</span></code> - Disapprove all assemblies for selected entries.</li>
+<li><code class="docutils literal notranslate"><span class="pre">import_traces.py</span></code> - Import ABI sequence trace files into a connected
 database.</li>
 </ul>
 </div>
 <div class="section" id="gui">
 <h2>gui<a class="headerlink" href="#gui" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><tt class="docutils literal"><span class="pre">set_field.py</span></tt> - A simple PyQt based dialog application to set field value of
-selected entries. (<a class="reference external" href="http://vimalkumar.in/2010/08/02/pyqt-interfaces-in-bionumerics-6/">Related blog post</a>).</li>
-<li><tt class="docutils literal"><span class="pre">setfielddlg.ui</span></tt> - Qt Designer user interface definition file (XML Format).</li>
+<li><code class="docutils literal notranslate"><span class="pre">set_field.py</span></code> - A simple PyQt based dialog application to set field value of
+selected entries. (<a class="reference external" href="https://vimal.io/pyqt-interfaces-in-bionumerics-6/">Related blog post</a>).</li>
+<li><code class="docutils literal notranslate"><span class="pre">setfielddlg.ui</span></code> - Qt Designer user interface definition file (XML Format).</li>
 </ul>
 </div>
 <div class="section" id="utils">
 <h2>utils<a class="headerlink" href="#utils" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><tt class="docutils literal"><span class="pre">bn6_epydoc.py</span></tt> - Generate epydoc documentation of Bionumerics 6
-Python modules. (<a class="reference external" href="http://vimalkumar.in/2010/04/22/extract-documentation-from-bionumerics-6-0-python-modules/">Related blog post</a>).</li>
-<li><tt class="docutils literal"><span class="pre">concat_characters.py</span></tt> - Concatenate sequences in a character set
+<li><code class="docutils literal notranslate"><span class="pre">bn6_epydoc.py</span></code> - Generate epydoc documentation of Bionumerics 6
+Python modules.</li>
+<li><code class="docutils literal notranslate"><span class="pre">concat_characters.py</span></code> - Concatenate sequences in a character set
 experiment for a list of keys.</li>
-<li><tt class="docutils literal"><span class="pre">create_exper.py</span></tt> - Create sequence experiments using experiment names from
+<li><code class="docutils literal notranslate"><span class="pre">create_exper.py</span></code> - Create sequence experiments using experiment names from
 AB1 files.</li>
-<li><tt class="docutils literal"><span class="pre">dbf.py</span></tt> - Common database functions.</li>
-<li><tt class="docutils literal"><span class="pre">delete_subsets.py</span></tt> - Delete all empty subsets.</li>
-<li><tt class="docutils literal"><span class="pre">logging_example.py</span></tt> - Using the python logging module.</li>
-<li><tt class="docutils literal"><span class="pre">unittest_example.py</span></tt> - Using the unittest module.</li>
+<li><code class="docutils literal notranslate"><span class="pre">dbf.py</span></code> - Common database functions.</li>
+<li><code class="docutils literal notranslate"><span class="pre">delete_subsets.py</span></code> - Delete all empty subsets.</li>
+<li><code class="docutils literal notranslate"><span class="pre">logging_example.py</span></code> - Using the python logging module.</li>
+<li><code class="docutils literal notranslate"><span class="pre">unittest_example.py</span></code> - Using the unittest module.</li>
 </ul>
 </div>
 </div>
@@ -124,23 +78,57 @@ AB1 files.</li>
           </div>
         </div>
       </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">BioNumerics Scripts</a></h1>
+
+
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=vimalkvn&repo=bionumerics_scripts&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+<h3>Navigation</h3>
+
+
+<ul>
+<li><a class="reference internal" href="#">misc — Miscellaneous scripts</a><ul>
+<li><a class="reference internal" href="#assembly">assembly</a></li>
+<li><a class="reference internal" href="#gui">gui</a></li>
+<li><a class="reference internal" href="#utils">utils</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+        </div>
+      </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="itcrispr.html" title="itcrispr — An interface to assemble and track progress of CRISPR sequence experiments in BioNumerics"
-             >previous</a> |</li>
-        <li><a href="index.html">BioNumerics Scripts 1.0 documentation</a> &raquo;</li> 
-      </ul>
-    </div>
+
     <div class="footer">
-        &copy; Copyright 2013, Vimalkumar Velayudhan.
-    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.Theme by <a href="http://github.com/vkvn">vkvn</a>
+      &copy;2013, Vimalkumar Velayudhan.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/misc.rst.txt"
+          rel="nofollow">Page source</a>
     </div>
+
+    
+
+    
   </body>
 </html>

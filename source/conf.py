@@ -81,7 +81,7 @@ exclude_patterns = []
 #show_authors = False
 
 # The name of the Pygments (syntax highlighting) style to use.
-#pygments_style = 'sphinx'
+pygments_style = 'sphinx'
 
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
@@ -91,15 +91,27 @@ exclude_patterns = []
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'solar'
+#html_theme = 'solar'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 #html_theme_options = {}
 
+html_theme_options = {
+    'github_user': 'vimalkvn',
+    'github_repo': 'bionumerics_scripts'
+    }
+    
+html_sidebars = {
+    '**': [
+        'about.html',
+        'navigation.html'
+    ]
+}
+
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = ['.']
+#html_theme_path = ['.']
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".

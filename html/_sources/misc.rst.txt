@@ -14,13 +14,13 @@ assembly
 gui
 ---
 * ``set_field.py`` - A simple PyQt based dialog application to set field value of 
-  selected entries. (`Related blog post <http://vimalkumar.in/2010/08/02/pyqt-interfaces-in-bionumerics-6/>`_).
+  selected entries. (`Related blog post <https://vimal.io/pyqt-interfaces-in-bionumerics-6/>`__).
 * ``setfielddlg.ui`` - Qt Designer user interface definition file (XML Format).
 
 utils
 -----
 * ``bn6_epydoc.py`` - Generate epydoc documentation of Bionumerics 6
-  Python modules. (`Related blog post <http://vimalkumar.in/2010/04/22/extract-documentation-from-bionumerics-6-0-python-modules/>`_).
+  Python modules.
 * ``concat_characters.py`` - Concatenate sequences in a character set 
   experiment for a list of keys.
 * ``create_exper.py`` - Create sequence experiments using experiment names from 
