@@ -1,7 +1,9 @@
-Python scripts for working with BioNumerics databases
-=====================================================
+Python scripts for working with BioNumerics 6 databases
+=======================================================
+
+**Not currently maintained**
 
 Documentation
 -------------
-http://vkvn.github.io/bionumerics_scripts/html/index.html
+https://vimalkvn.github.io/bionumerics_scripts/html/index.html
 
